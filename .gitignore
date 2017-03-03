@@ -1,0 +1,7 @@
+# Ignore tempfiles
+/tmp
+
+# Ignore systems and tools files
+*.DS_Store
+*Thumbs.db
+.idea
