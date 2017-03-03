@@ -19,7 +19,10 @@ Dependencies and testing
 Application requires [jQuery](https://jquery.com/)
 and [jPlayer](http://jplayer.org/).
 
-Has been tested with jQuery v2.1.4 and v2.2.4 and jPlayer v2.9.2.
+Has been tested with jQuery from v1.9.0 to v3.1.1
+and jPlayer from v2.5.0 to 2.9.2.
+
+Platforms and browsers support the same as jPlayer.. in theory. :)
 
 
 Installation
