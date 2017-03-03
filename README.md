@@ -41,6 +41,15 @@ Installation
 Do not forget to put player56s_sprite.png file to the same directory
 where 'player56s.css' placed.
 
+### via [Bower](https://bower.io/)
+
+    bower install player-56s
+
+
+### via [npm](https://www.npmjs.com/)
+
+    npm install player-56s
+
 
 Usage
 -----
