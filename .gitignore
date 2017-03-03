@@ -1,6 +1,9 @@
 # Ignore tempfiles
 /tmp
 
+# Ignore node modules
+node_modules
+
 # Ignore systems and tools files
 *.DS_Store
 *Thumbs.db
