@@ -1,0 +1,217 @@
+/*!
+ * Player 56s v0.5.0
+ * Copyright 2015 by Ivan Dymkov (http://dymio.net)
+ *               and 56 STUFF (http://www.56stuff.com/)
+ * Licensed under MIT
+ */
+
+.player56s {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.player56s-invisible-object { height: 80px; }
+
+.player56s .player56s-button,
+.player56s .player56s-tracks .player56s-track-nav {
+  background: url('player56s_sprite.png') no-repeat left top; }
+
+.player56s .player56s-content { position: relative; padding: 3px 5px; }
+
+/* == Title, Author and Timeline == */
+.player56s .player56s-title,
+.player56s .player56s-author,
+.player56s .player56s-timeline {
+  margin-left: 93px;
+}
+
+.player56s .player56s-title {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  height: 22px;
+  font-size: 20px;
+  line-height: 22px;
+}
+.player56s .player56s-author {
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.player56s .player56s-timeline {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 2px;
+  height: 8px;
+  background: #cdd4c6;
+  cursor: pointer;
+  }
+  .player56s .player56s-timeline .player56s-timeline-done {
+    position: absolute;
+    left: 0; top: 0;
+    background: #95b377;
+    height: 8px;
+    width: 0%;
+  }
+  .player56s .player56s-timeline .player56s-timeline-load {
+    position: absolute;
+    left: 0; top: 0;
+    height: 8px;
+    width: 0%;
+    background: #c7d6b7;
+  }
+
+/* == Button (play & pause) == */
+.player56s .player56s-button {
+  position: absolute;
+  top: 10px; left: 38px;
+  width: 41px; height: 46px;
+  background-position: -1px -1px;
+  cursor: pointer;
+}
+.player56s .player56s-button:hover { opacity: 0.8; }
+.player56s.player56s-status-playing .player56s-button {
+  background-position: -1px -48px;
+}
+
+/* == Volume == */
+.player56s .player56s-volume {
+  position: absolute;
+  top: 4px; left: 5px;
+  width: 13px; height: 81px;
+}
+.player56s .player56s-volume .player56s-vol-pin {
+  position: relative;
+  width: 13px; height: 12px;
+  cursor: pointer; }
+  .player56s .player56s-volume .player56s-vol-pin:before {
+    content: "";
+    display: block;
+    width: 13px; height: 9px;
+    background: #c7d6b7;
+    position: relative;
+    top: 3px; left: 0;
+    -webkit-transition: top 200ms, left 200ms;
+    -moz-transition: top 200ms, left 200ms;
+    -o-transition: top 200ms, left 200ms;
+    transition: top 200ms, left 200ms;
+  }
+.player56s .player56s-volume .player56s-vol-pin:hover:before { left: 2px; }
+.player56s .player56s-volume .player56s-vol-pin.active:before { background: #95b377; }
+
+.player56s .player56s-volume .player56s-vol-pin.max-vol { height: 9px; }
+.player56s .player56s-volume .player56s-vol-pin.max-vol:before { top: 0; }
+
+.player56s .player56s-volume .player56s-vol-pin.zero-vol { height: 3px; }
+.player56s .player56s-volume .player56s-vol-pin.zero-vol:before { display: none; }
+
+/* == Track navigation (next & prev) == */
+.player56s .player56s-tracks {
+  position: absolute;
+  top: 74px; left: 36px;
+  width: 40px;
+  height: 13px;
+  }
+  .player56s .player56s-tracks .player56s-track-nav {
+    width: 11px; height: 13px;
+  }
+  .player56s .player56s-tracks .player56s-track-nav.enabled {
+    cursor: pointer;
+  }
+  .player56s .player56s-tracks .player56s-track-prev {
+    float: left;
+    background-position: -43px -1px;
+  }
+  .player56s .player56s-tracks .player56s-track-next {
+    float: right;
+    background-position: -55px -15px;
+  }
+  .player56s .player56s-tracks .player56s-track-prev.enabled {
+    background-position: -55px -1px; }
+  .player56s .player56s-tracks .player56s-track-next.enabled {
+    background-position: -43px -15px; }
+
+/* == Devices without volume change ability == */
+.player56s.volumeless .player56s-volume { display: none; }
+.player56s.volumeless .player56s-title,
+.player56s.volumeless .player56s-author,
+.player56s.volumeless .player56s-timeline { margin-left: 57px; }
+.player56s.volumeless .player56s-button { left: 2px; }
+.player56s.volumeless .player56s-tracks { left: 0; }
+
+/* !=-=-=
+    MINIMALISTIC THEME
+   =-=-=! */
+
+.player56s.minimal {}
+
+.player56s.minimal .player56s-content { padding: 11px 9px; }
+
+/* == Timeline == */
+.player56s.minimal .player56s-timeline {
+  position: relative;
+  margin: 0 98px 0 33px;
+  height: 19px;
+  }
+  .player56s.minimal .player56s-timeline .player56s-timeline-done {
+    background: #95b377;
+    height: 19px;
+  }
+  .player56s.minimal .player56s-timeline .player56s-timeline-load {
+    height: 19px;
+  }
+
+/* == Button (play & pause) == */
+.player56s.minimal .player56s-button {
+  position: absolute;
+  top: 10px; left: 10px;
+  width: 19px; height: 20px;
+  background-position: -43px -48px;
+}
+.player56s.minimal.player56s-status-playing .player56s-button {
+  background-position: -43px -69px;
+}
+
+/* == Volume (play & pause) == */
+.player56s.minimal .player56s-volume {
+  position: absolute;
+  top: 10px; right: 9px; left: auto;
+  width: 50px; height: 20px;
+}
+.player56s.minimal .player56s-volume .player56s-vol-pin {
+  display: inline-block;
+  width: 10px; height: 20px;
+  }
+  .player56s.minimal .player56s-volume .player56s-vol-pin:before {
+    width: 6px; height: 20px;
+    top: 0; left: 4px;
+  }
+.player56s.minimal .player56s-volume .player56s-vol-pin:hover:before { top: -6px; left: 4px; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.zero-vol { width: 4px; height: 20px; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.zero-vol:before { display: none; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.zero-vol + .player56s-vol-pin { width: 6px; height: 20px; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.zero-vol + .player56s-vol-pin:before { left: 0; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.zero-vol + .player56s-vol-pin:hover:before { top: -6px; left: 0; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.max-vol { height: 20px; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.max-vol:before { top: 0; }
+.player56s.minimal .player56s-volume .player56s-vol-pin.max-vol:hover:before { top: -6px; }
+
+/* == Time == */
+.player56s.minimal .player56s-time {
+  position: absolute;
+  top: 10px; right: 64px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* == Devices without volume change ability == */
+.player56s.minimal.volumeless .player56s-volume { display: none; }
+.player56s.minimal.volumeless .player56s-timeline {
+  margin-right: 40px;
+  margin-left: 33px; }
+.player56s.minimal.volumeless .player56s-button { left: 10px; }
+.player56s.minimal.volumeless .player56s-time { right: 9px; }
