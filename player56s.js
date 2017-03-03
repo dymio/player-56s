@@ -1,7 +1,7 @@
 /*!
  * Player 56s v0.5.0
- * Copyright 2015 by 56 STUFF (http://www.56stuff.com/)
-                 and Ivan Dymkov (http://dymio.net)
+ * Copyright 2015 by Ivan Dymkov (http://dymio.net)
+                 and 56 STUFF (http://www.56stuff.com/)
  * Licensed under the MIT license
  * Inspired by Jouele 2.0.0
  *   https://github.com/ilyabirman/Jouele
