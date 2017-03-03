@@ -1,8 +1,9 @@
 # Ignore tempfiles
 /tmp
 
-# Ignore node modules
+# Ignore modules
 node_modules
+bower_components
 
 # Ignore systems and tools files
 *.DS_Store

@@ -1,0 +1,35 @@
+{
+  "name": "player-56s",
+  "description": "Web audio-player with playlist and minimalistic view as option",
+  "main": [
+    "player56s.js",
+    "player56s.css"
+  ],
+  "authors": [
+    "Ivan Dymkov <mstrdymio@gmail.com> (http://dymio.net)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "audio-player",
+    "jquery",
+    "jquery-plugin",
+    "jplayer"
+  ],
+  "homepage": "https://github.com/dymio/player-56s",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo"
+  ],
+  "dependencies": {
+    "jquery": ">=2.0.0",
+    "jPlayer": "jplayer#>=2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dymio/player-56s.git"
+  }
+}
