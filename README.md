@@ -33,7 +33,7 @@ Installation
 
     <!-- Add player 56s code and style files -->
     <link href="player56s.css" rel="stylesheet"/>
-    <script src="player56s.js"></script>
+    <script src="player56s.min.js"></script>
 
 Do not forget to put player56s_sprite.png file to the same directory
 where 'player56s.css' placed.
