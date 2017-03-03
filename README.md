@@ -50,6 +50,9 @@ a default player without playlist.
 
     <a href="audios/birman_news.mp3" class="player56s">Ilya Birman - News</a>
 
+You can place author name to the track title with dividing it from track name
+by minus (`-`) or medium dash (`&mdash;`).
+
 
 ### Several tracks
 
