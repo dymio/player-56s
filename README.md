@@ -12,6 +12,8 @@ Player 56s based on [Jouele](https://github.com/ilyabirman/Jouele) web player
 by Ilya Birman and Evgeniy Lazarev. I have been inspired by simplicity and style
 of their project. Thank you guys.
 
+[Demo page](http://static.dymio.net/player-56s/demo/).
+
 
 Dependencies and testing
 ------------------------
