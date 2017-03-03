@@ -50,6 +50,8 @@ a default player without playlist.
 
     <a href="audios/birman_news.mp3" class="player56s">Ilya Birman - News</a>
 
+<img src="http://static.dymio.net/player-56s/screens/player_56s_single.png">
+
 You can place author name to the track title with dividing it from track name
 by minus (`-`) or medium dash (`&mdash;`).
 
@@ -63,6 +65,8 @@ tracks.
     <a href="audios/yh_vests.mp3" class="player56s" rel="group1">Yellowhead - Vests Must Be Used</a>
     <a href="audios/yh_cabin.mp3" class="player56s" rel="group1">Yellowhead - Cabin Pressure</a>
 
+<img src="http://static.dymio.net/player-56s/screens/player_56s_playlist.png">
+
 
 ### Minimalistic view
 
@@ -72,6 +76,8 @@ anchor and attribute 'data-length' with length of track in format 'M:SS'.
     <a href="audios/ios_atelier.mp3" class="player56s minimal" data-length="4:33">
       Idiosync - Atelier
     </a>
+
+<img src="http://static.dymio.net/player-56s/screens/player_56s_minimalistic.png">
 
 It works only for single track.
 
