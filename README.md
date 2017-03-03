@@ -1,8 +1,8 @@
 Player 56s
 ==========
 
-Player 56s is simple in use web audio-player with a playlist and ability
-to enable minimalistic view mode.
+Player 56s is simple in use web audio-player with a playlist, responsive design
+and ability to enable minimalistic view mode.
 
 Player 56s was made for an international art community and a record label
 [56stuff.com](http://www.56stuff.com/) and published as open-souce with
